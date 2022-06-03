@@ -1,7 +1,7 @@
 # Maintainer: Shiroko <hhx.xxm at gmail.com>
 # Maintainer: Johnpoint <me at lvcshu.com>
 pkgname=clash-for-windows-bin
-pkgver=0.19.19
+pkgver=0.19.20
 pkgrel=1
 pkgdesc="A Windows/macOS/Linux GUI based on Clash and Electron."
 arch=("x86_64" "aarch64")
@@ -31,21 +31,9 @@ source_aarch64=(
     "${pkgname}-${pkgver}-aarch64-linux.tar.gz::${url}/releases/download/${pkgver}/Clash.for.Windows-${pkgver}-arm64-linux.tar.gz"
     )
 
-sha256sums=(
-    'SKIP'
-    'a2997f604a486e264f6fc5344164ae9e1a9a01282006a41784dd181f7d1a2913'
-    '4c0a9de624905e3717b0dd4effa24fbf5c79ad28221b3b3b15a4a0aca4d47e03'
-    )
-
 sha256sums_x86_64=(
-    'e5c0a2e6014f1d3098d7fa922e8fb98abcdb70946f619415daaebd0ae4927662'
+    '329983c73deb0fcd4dec1749e48ac8eb718366202087e0707f334f69c9a94d2e'
     )
-
-
-sha256sums_aarch64=(
-    '5e077cb1a3f0f9199887eaaa93bd3192f09e5138de07a34047a81a4031e047b2'
-    )
-
 
 build() {
     # generate .desktop file
