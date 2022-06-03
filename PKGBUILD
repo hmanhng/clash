@@ -31,8 +31,18 @@ source_aarch64=(
     "${pkgname}-${pkgver}-aarch64-linux.tar.gz::${url}/releases/download/${pkgver}/Clash.for.Windows-${pkgver}-arm64-linux.tar.gz"
     )
 
+sha256sums=(
+    'SKIP'
+    'a2997f604a486e264f6fc5344164ae9e1a9a01282006a41784dd181f7d1a2913'
+    '4c0a9de624905e3717b0dd4effa24fbf5c79ad28221b3b3b15a4a0aca4d47e03'
+    )
+
 sha256sums_x86_64=(
     '329983c73deb0fcd4dec1749e48ac8eb718366202087e0707f334f69c9a94d2e'
+    )
+
+sha256sums_aarch64=(
+    '5e077cb1a3f0f9199887eaaa93bd3192f09e5138de07a34047a81a4031e047b2'
     )
 
 build() {
